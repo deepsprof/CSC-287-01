@@ -6,7 +6,7 @@ Create a Python script that processes user profile data stored as JSON files in 
 #### **Requirements:**
 
 1. **Directory Structure**: 
-    - You will be working with a directory called `user_profiles` that contains sub-directories such as `admins`, `editors`, `viewers`, etc.
+    - You will be working with the directory called `user_profiles` (included in this repo), that contains sub-directories such as `admins`, `editors`, `viewers`, etc.
     - Each sub-directory contains JSON files that represent individual user profiles (e.g., `admin1.json`, `editor1.json`).
 
 2. **Task Overview**:
@@ -29,8 +29,8 @@ Create a Python script that processes user profile data stored as JSON files in 
     d. **Output Directory**:
        - The modified JSON files should be written into a new folder with the current timestamp in the format: `user_profiles_updated_YYYYMMDD_HHMMSS`.
 
-4. **Bonus (Optional)**:
-    - Handle edge cases, such as missing keys in the JSON files, and ensure your script is robust to errors (e.g., using try-except blocks).
+4. **Exceptions**:
+    - Handle edge cases, such as missing keys in the JSON files, and ensure your script is robust to errors (e.g., using try-except blocks). Files that are not processable for any reason should be copied as-is to the destination folder.
 
 #### **Example Folder Structure:**
 ```plaintext
@@ -56,7 +56,7 @@ user_profiles/
     - `"view_content"` → `{"permission": "view_content", "granted_at": "2024-09-25", "level": "read-only"}`
 
 #### **Output Example:**
-If your script is run on `2024-10-11`, the output folder could be named `user_profiles_updated_20241011_143500`, with the modified JSON files inside.
+If your script is run on `2025-10-11`, the output folder could be named `user_profiles_updated_20251011_143500`, with the modified JSON files inside.
 
 #### **Submission:**
 1. Create a Homework 4 folder in your homework repository
